@@ -1,0 +1,30 @@
+
+===== USLegis: 60,396 edges, 225 nodes, 12 distinct times, test edges 4,950
+real test pairs: active one step ago 75.6%, seen at any earlier time 77.2%
+random fake pairs: truly active at that time 44.0%, seen earlier 62.8%
+hard fake pairs: active one step ago 22.4%, truly active at that time 14.3%, seen earlier 100.0%
+random test, perfect-knowledge rule AP 69.49; recency rule AP 62.66
+hard test, rule AP: seen-before 45.26, active one step ago 70.67, recency 70.79
+
+===== CanParl: 74,478 edges, 734 nodes, 14 distinct times, test edges 10,113
+real test pairs: active one step ago 44.1%, seen at any earlier time 51.6%
+random fake pairs: truly active at that time 8.3%, seen earlier 29.4%
+hard fake pairs: active one step ago 11.7%, truly active at that time 1.4%, seen earlier 100.0%
+random test, perfect-knowledge rule AP 92.47; recency rule AP 67.58
+hard test, rule AP: seen-before 45.54, active one step ago 64.67, recency 66.47
+
+===== UNtrade: 507,497 edges, 255 nodes, 32 distinct times, test edges 61,595
+real test pairs: active one step ago 93.2%, seen at any earlier time 99.1%
+random fake pairs: truly active at that time 59.9%, seen earlier 80.8%
+hard fake pairs: active one step ago 32.1%, truly active at that time 23.1%, seen earlier 100.0%
+random test, perfect-knowledge rule AP 62.59; recency rule AP 61.84
+hard test, rule AP: seen-before 49.77, active one step ago 72.78, recency 89.02
+
+===== UNvote: 1,035,742 edges, 201 nodes, 72 distinct times, test edges 155,119
+real test pairs: active one step ago 99.9%, seen at any earlier time 100.0%
+random fake pairs: truly active at that time 95.7%, seen earlier 98.6%
+hard fake pairs: active one step ago 82.1%, truly active at that time 81.1%, seen earlier 100.0%
+random test, perfect-knowledge rule AP 51.10; recency rule AP 51.53
+hard test, rule AP: seen-before 50.00, active one step ago 54.91, recency 54.99
+
+US Legis training negatives: raw truly active 51.2%, raw seen earlier 49.1%; after cleaning seen earlier 29.4%

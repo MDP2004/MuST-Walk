@@ -1,0 +1,52 @@
+TGB_tgbl-enron_B_s0 | tgbl-enron | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06
+TGB_tgbl-enron_B_s1 | tgbl-enron | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06
+TGB_tgbl-enron_B_s2 | tgbl-enron | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06
+TGB_tgbl-enron_D_s0 | tgbl-enron | 0 | --rp_lambdas 1e-06 --val_fraction 0.2
+TGB_tgbl-enron_HM_s0 | tgbl-enron | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-enron_HM_s1 | tgbl-enron | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-enron_HM_s2 | tgbl-enron | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-enron_M_s0 | tgbl-enron | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat
+TGB_tgbl-enron_M_s1 | tgbl-enron | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat
+TGB_tgbl-enron_M_s2 | tgbl-enron | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat
+TGB_tgbl-enron_X_s0 | tgbl-enron | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross
+TGB_tgbl-enron_X_s1 | tgbl-enron | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross
+TGB_tgbl-enron_X_s2 | tgbl-enron | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross
+TGB_tgbl-review_B_s0 | tgbl-review | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-07
+TGB_tgbl-review_B_s1 | tgbl-review | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-07
+TGB_tgbl-review_B_s2 | tgbl-review | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-07
+TGB_tgbl-review_D_s0 | tgbl-review | 0 | --rp_lambdas 1e-07 --val_fraction 0.2
+TGB_tgbl-review_HM_s0 | tgbl-review | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-review_HM_s1 | tgbl-review | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-review_HM_s2 | tgbl-review | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-review_M_s0 | tgbl-review | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat
+TGB_tgbl-review_M_s1 | tgbl-review | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat
+TGB_tgbl-review_M_s2 | tgbl-review | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat
+TGB_tgbl-review_X_s0 | tgbl-review | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross
+TGB_tgbl-review_X_s1 | tgbl-review | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross
+TGB_tgbl-review_X_s2 | tgbl-review | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross
+TGB_tgbl-uci_B_s0 | tgbl-uci | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-07
+TGB_tgbl-uci_B_s1 | tgbl-uci | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-07
+TGB_tgbl-uci_B_s2 | tgbl-uci | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-07
+TGB_tgbl-uci_D_s0 | tgbl-uci | 0 | --rp_lambdas 1e-07 --val_fraction 0.2
+TGB_tgbl-uci_HM_s0 | tgbl-uci | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-uci_HM_s1 | tgbl-uci | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-uci_HM_s2 | tgbl-uci | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-uci_M_s0 | tgbl-uci | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat
+TGB_tgbl-uci_M_s1 | tgbl-uci | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat
+TGB_tgbl-uci_M_s2 | tgbl-uci | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat
+TGB_tgbl-uci_X_s0 | tgbl-uci | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross
+TGB_tgbl-uci_X_s1 | tgbl-uci | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross
+TGB_tgbl-uci_X_s2 | tgbl-uci | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross
+TGB_tgbl-wiki_B_s0 | tgbl-wiki | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06
+TGB_tgbl-wiki_B_s1 | tgbl-wiki | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06
+TGB_tgbl-wiki_B_s2 | tgbl-wiki | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-06
+TGB_tgbl-wiki_D_s0 | tgbl-wiki | 0 | --rp_lambdas 1e-06 --val_fraction 0.2
+TGB_tgbl-wiki_HM_s0 | tgbl-wiki | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-wiki_HM_s1 | tgbl-wiki | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-wiki_HM_s2 | tgbl-wiki | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --train_neg_hist 0.5
+TGB_tgbl-wiki_M_s0 | tgbl-wiki | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat
+TGB_tgbl-wiki_M_s1 | tgbl-wiki | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat
+TGB_tgbl-wiki_M_s2 | tgbl-wiki | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat
+TGB_tgbl-wiki_X_s0 | tgbl-wiki | 0 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross
+TGB_tgbl-wiki_X_s1 | tgbl-wiki | 1 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross
+TGB_tgbl-wiki_X_s2 | tgbl-wiki | 2 | --rp_strict_time --rp_lazy --val_fraction 0.2 --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross

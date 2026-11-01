@@ -1,0 +1,4 @@
+dataset  test edges | never before |   1 step ago |    2-3 steps |   4-10 steps |    >10 steps | weight of 1-step-old edge (tuned)
+USLegis       4,950 |        22.8% |        75.6% |         1.6% |         0.0% |         0.0% | 2.01e-14  (lambda 1e-06)
+UNtrade      61,595 |         0.9% |        93.2% |         3.4% |         1.9% |         0.6% | 4.27e-02  (lambda 1e-07)
+UNvote      155,119 |         0.0% |        99.9% |         0.0% |         0.1% |         0.0% | 1.10e-137  (lambda 1e-05)

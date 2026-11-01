@@ -1,0 +1,24 @@
+A1_USLegis_J3_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 0 --rp_fusion concat
+A1_USLegis_UNI_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-04 1e-05 1e-06 1e-07 --rp_fusion concat
+A1_USLegis_LOG_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 2.2e-08 5.5e-09 0 --rp_fusion concat
+A1_USLegis_AVG_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion avg --rp_base_index 1
+A1_USLegis_GATE_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion gate --rp_base_index 1
+A1_USLegis_GN_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion gate --rp_base_index 1 --rp_gate_norm
+A1_USLegis_CN_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --clean_train_neg
+A1_USLegis_EL_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --edge_feat_log
+A1_USLegis_J3_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 0 --rp_fusion concat
+A1_USLegis_UNI_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-04 1e-05 1e-06 1e-07 --rp_fusion concat
+A1_USLegis_LOG_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 2.2e-08 5.5e-09 0 --rp_fusion concat
+A1_USLegis_AVG_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion avg --rp_base_index 1
+A1_USLegis_GATE_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion gate --rp_base_index 1
+A1_USLegis_GN_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion gate --rp_base_index 1 --rp_gate_norm
+A1_USLegis_CN_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --clean_train_neg
+A1_USLegis_EL_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --edge_feat_log
+A1_USLegis_J3_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 0 --rp_fusion concat
+A1_USLegis_UNI_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-04 1e-05 1e-06 1e-07 --rp_fusion concat
+A1_USLegis_LOG_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 2.2e-08 5.5e-09 0 --rp_fusion concat
+A1_USLegis_AVG_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion avg --rp_base_index 1
+A1_USLegis_GATE_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion gate --rp_base_index 1
+A1_USLegis_GN_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion gate --rp_base_index 1 --rp_gate_norm
+A1_USLegis_CN_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --clean_train_neg
+A1_USLegis_EL_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --edge_feat_log

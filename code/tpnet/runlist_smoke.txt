@@ -1,0 +1,8 @@
+SM_USLegis_B_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06
+SM_USLegis_M_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat
+SM_USLegis_X_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+SM_USLegis_E_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 22
+SM_USLegis_HB_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 --train_neg_hist 0.5 --select_hist
+SM_USLegis_HM_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+SM_USLegis_HX_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+SM_USLegis_BE_s0 | USLegis | 0 | --rp_strict_time --rp_lambdas 1e-06

@@ -1,0 +1,136 @@
+MAIN EXPERIMENT: 126 of 126 runs have results
+Historical test AP (primary)
+  USLegis  B 66.25+-10.86 | M 75.90+-4.28 | X 81.36+-1.98 | E 74.32+-3.60 | HB 89.37+-0.94 | HM 90.54+-0.57 | HX 89.79+-0.18
+  CanParl  B 81.37+-4.39 | M 86.11+-3.87 | X 82.32+-3.91 | E 88.19+-0.58 | HB 92.21+-0.27 | HM 91.32+-0.40 | HX 91.38+-0.47
+  UNtrade  B 61.00+-1.20 | M 60.21+-0.97 | X 61.30+-0.91 | E 61.01+-0.84 | HB 86.62+-0.90 | HM 87.48+-0.11 | HX 88.42+-0.62
+  UNvote   B 57.18+-4.22 | M 59.89+-0.91 | X 60.42+-1.04 | E 63.98+-2.06 | HB 73.74+-0.69 | HM 71.95+-1.00 | HX 68.32+-2.11
+  uci      B 86.57+-0.61 | M 85.55+-0.18 | X 86.57+-0.35 | E 86.45+-0.51 | HB 96.75+-0.07 | HM 96.31+-0.26 | HX 95.30+-0.90
+  enron    B 81.51+-1.26 | M 79.16+-0.78 | X 81.07+-0.89 | E 79.17+-4.10 | HB 90.95+-0.41 | HM 90.52+-0.05 | HX 90.86+-0.41
+Random test AP
+  USLegis  B 69.71+-0.45 | M 69.08+-0.74 | X 67.56+-1.76 | E 67.33+-0.82 | HB 69.81+-0.42 | HM 70.49+-0.93 | HX 69.47+-0.19
+  CanParl  B 80.55+-0.75 | M 79.82+-0.78 | X 81.93+-1.14 | E 79.43+-1.29 | HB 80.15+-0.56 | HM 77.01+-0.43 | HX 76.73+-0.30
+  UNtrade  B 67.53+-0.42 | M 67.94+-0.04 | X 67.86+-0.07 | E 67.24+-0.06 | HB 61.17+-0.36 | HM 61.38+-0.95 | HX 61.78+-0.87
+  UNvote   B 55.23+-0.67 | M 55.76+-0.21 | X 55.73+-0.17 | E 56.15+-0.23 | HB 55.79+-0.21 | HM 55.61+-0.10 | HX 54.88+-0.52
+  uci      B 97.33+-0.08 | M 96.87+-0.02 | X 96.70+-0.26 | E 96.87+-0.17 | HB 93.36+-0.35 | HM 92.38+-0.94 | HX 90.88+-0.27
+  enron    B 93.26+-0.28 | M 93.35+-0.14 | X 93.18+-0.31 | E 93.05+-0.17 | HB 92.16+-0.20 | HM 92.24+-0.15 | HX 92.02+-0.11
+Inductive test AP
+  USLegis  B 65.04+-9.52 | M 69.03+-5.65 | X 79.59+-1.63 | E 72.80+-4.87 | HB 80.26+-0.33 | HM 75.76+-0.68 | HX 78.90+-0.99
+  CanParl  B 77.86+-2.52 | M 79.24+-1.02 | X 78.01+-1.71 | E 78.89+-0.77 | HB 83.69+-0.50 | HM 80.09+-0.68 | HX 78.70+-1.22
+  UNtrade  B 56.29+-0.37 | M 58.16+-0.48 | X 58.03+-0.63 | E 60.17+-1.40 | HB 81.19+-0.34 | HM 82.92+-0.56 | HX 83.89+-0.56
+  UNvote   B 51.41+-0.26 | M 54.21+-1.21 | X 54.70+-1.93 | E 55.69+-1.31 | HB 61.88+-1.16 | HM 60.28+-0.81 | HX 57.88+-0.67
+  uci      B 77.90+-0.66 | M 76.58+-0.27 | X 77.89+-0.38 | E 76.86+-1.14 | HB 93.29+-0.28 | HM 93.17+-0.20 | HX 92.45+-0.29
+  enron    B 76.25+-1.77 | M 78.32+-1.28 | X 77.92+-0.96 | E 76.99+-2.64 | HB 87.28+-0.51 | HM 87.22+-0.55 | HX 87.09+-0.19
+Runs labelled truncated, or not on a T4
+  V3_UNvote_B_s0       RTX 3050 laptop                  last epoch 80, best 60
+  V3_UNvote_B_s2       RTX 3050 laptop                  last epoch 79, best 59
+  V3_UNvote_HB_s2      RTX 3050 laptop                  last epoch 44, best 24
+  V3_UNvote_HM_s1      Tesla T4                         last epoch 28, best 18  TRUNCATED
+  V3_UNvote_HM_s2      Tesla T4                         last epoch 28, best 26  TRUNCATED
+  V3_UNvote_HX_s1      NVIDIA RTX 6000 Ada Generation   last epoch 41, best 21
+  V3_UNvote_M_s1       Tesla T4                         last epoch 52, best 45  TRUNCATED
+  V3_UNvote_M_s2       Tesla T4                         last epoch 52, best 50  TRUNCATED
+  V3_UNvote_X_s1       NVIDIA RTX 6000 Ada Generation   last epoch 57, best 37
+Per-dataset questions: supported = mean gain >= +1.0 AP and at least 2 of 3 seeds won
+  Q1 M  vs B  USLegis  mean  +9.64 wins 2/3  +16.14 +17.58 -4.79  -> SUPPORTED
+  Q1 M  vs B  CanParl  mean  +4.74 wins 3/3  +9.23 +2.62 +2.37  -> SUPPORTED
+  Q1 M  vs B  UNtrade  mean  -0.79 wins 2/3  +0.48 -3.28 +0.44  -> not supported
+  Q1 M  vs B  UNvote   mean  +2.72 wins 2/3  -0.83 +0.41 +8.57  -> SUPPORTED
+  Q1 M  vs B  uci      mean  -1.02 wins 0/3  -0.54 -1.36 -1.15  -> not supported
+  Q1 M  vs B  enron    mean  -2.35 wins 0/3  -0.61 -3.95 -2.49  -> not supported
+  Q2 X  vs M  USLegis  mean  +5.47 wins 2/3  +6.73 -0.46 +10.13  -> SUPPORTED
+  Q2 X  vs M  CanParl  mean  -3.79 wins 1/3  -3.26 +2.89 -11.00  -> not supported
+  Q2 X  vs M  UNtrade  mean  +1.09 wins 3/3  +1.43 +1.82 +0.03  -> SUPPORTED
+  Q2 X  vs M  UNvote   mean  +0.53 wins 2/3  +2.13 +0.88 -1.43  -> not supported
+  Q2 X  vs M  uci      mean  +1.02 wins 3/3  +1.37 +0.45 +1.24  -> SUPPORTED
+  Q2 X  vs M  enron    mean  +1.91 wins 3/3  +0.74 +2.81 +2.19  -> SUPPORTED
+  Q3 E  vs B  USLegis  mean  +8.06 wins 2/3  +12.96 +13.21 -1.98  -> SUPPORTED, keeps half of M
+  Q3 E  vs B  CanParl  mean  +6.82 wins 3/3  +9.36 +9.79 +1.32  -> SUPPORTED, keeps half of M
+  Q3 E  vs B  UNtrade  mean  +0.01 wins 2/3  +1.23 -2.32 +1.13  -> not supported
+  Q3 E  vs B  UNvote   mean  +6.80 wins 3/3  +1.47 +6.84 +12.09  -> SUPPORTED, keeps half of M
+  Q3 E  vs B  uci      mean  -0.12 wins 1/3  +1.06 -0.64 -0.79  -> not supported
+  Q3 E  vs B  enron    mean  -2.34 wins 1/3  +1.29 -7.78 -0.52  -> not supported
+  Q4 HB vs B  USLegis  mean +23.12 wins 3/3  +32.89 +25.05 +11.42  -> SUPPORTED
+  Q4 HB vs B  CanParl  mean +10.84 wins 3/3  +13.82 +13.21 +5.48  -> SUPPORTED
+  Q4 HB vs B  UNtrade  mean +25.62 wins 3/3  +26.58 +23.21 +27.08  -> SUPPORTED
+  Q4 HB vs B  UNvote   mean +16.56 wins 3/3  +14.26 +14.62 +20.81  -> SUPPORTED
+  Q4 HB vs B  uci      mean +10.18 wins 3/3  +10.92 +9.68 +9.95  -> SUPPORTED
+  Q4 HB vs B  enron    mean  +9.44 wins 3/3  +10.87 +8.32 +9.12  -> SUPPORTED
+  Q4 HM vs M  USLegis  mean +14.64 wins 3/3  +17.69 +9.07 +17.16  -> SUPPORTED
+  Q4 HM vs M  CanParl  mean  +5.21 wins 3/3  +3.43 +9.27 +2.94  -> SUPPORTED
+  Q4 HM vs M  UNtrade  mean +27.27 wins 3/3  +26.49 +28.50 +26.82  -> SUPPORTED
+  Q4 HM vs M  UNvote   mean +12.06 wins 3/3  +13.19 +11.48 +11.50  -> SUPPORTED
+  Q4 HM vs M  uci      mean +10.76 wins 3/3  +11.01 +10.82 +10.45  -> SUPPORTED
+  Q4 HM vs M  enron    mean +11.36 wins 3/3  +11.08 +12.29 +10.71  -> SUPPORTED
+Q5 across datasets: exact one-sided Wilcoxon on per-dataset mean gains, Holm over 4; claim needs adjusted p < 0.05 and mean gain >= +1.0
+  M  vs B  gains +9.64 +4.74 -0.79 +2.72 -1.02 -2.35 mean +2.16 p 0.2188 Holm 0.4688 -> not supported
+  X  vs M  gains +5.47 -3.79 +1.09 +0.53 +1.02 +1.91 mean +1.04 p 0.1562 Holm 0.4688 -> not supported
+  HM vs M  gains +14.64 +5.21 +27.27 +12.06 +10.76 +11.36 mean +13.55 p 0.0156 Holm 0.0625 -> not supported
+  E  vs B  gains +8.06 +6.82 +0.01 +6.80 -0.12 -2.34 mean +3.21 p 0.1562 Holm 0.4688 -> not supported
+  Note: with 6 datasets and 4 tests the smallest possible Holm-adjusted p is 4/64 = 0.0625, so no comparison could reach 0.05. This was not noticed when the rule was written.
+Exploratory, not pre-registered
+  M  vs B  over (dataset, seed) pairs, seeds not independent: n=18 wins 9 mean +2.16 exact one-sided p 0.399353
+  X  vs M  over (dataset, seed) pairs, seeds not independent: n=18 wins 14 mean +1.04 exact one-sided p 0.040714
+  HM vs M  over (dataset, seed) pairs, seeds not independent: n=18 wins 18 mean +13.55 exact one-sided p 0.000004
+  E  vs B  over (dataset, seed) pairs, seeds not independent: n=18 wins 12 mean +3.21 exact one-sided p 0.024139
+  HB vs B  over (dataset, seed) pairs, seeds not independent: n=18 wins 18 mean +15.96 exact one-sided p 0.000004
+  HB vs B across datasets: gains +23.12 +10.84 +25.62 +16.56 +10.18 +9.44 mean +15.96 exact one-sided p 0.0156
+  HM vs HB USLegis  mean  +1.16 wins 3/3  +0.94 +1.60 +0.95
+  HM vs HB CanParl  mean  -0.88 wins 0/3  -1.16 -1.32 -0.17
+  HM vs HB UNtrade  mean  +0.86 wins 3/3  +0.39 +2.01 +0.18
+  HM vs HB UNvote   mean  -1.79 wins 0/3  -1.90 -2.73 -0.74
+  HM vs HB uci      mean  -0.44 wins 0/3  -0.45 -0.22 -0.65
+  HM vs HB enron    mean  -0.43 wins 1/3  -0.40 +0.02 -0.90
+
+LARGE DATASETS: 52 units have results (52 planned)
+  TGB_tgbl-wiki_M_s1 has 2 results: wiki_r2_out test 0.8158 epochs 2 truncated, wiki_r5_out test 0.8228 epochs 10 complete (last one used)
+  tgbl-enron: default config 0.636
+    B   mean 0.5909 std 0.0011  s0 0.5905(13ep) s1 0.5921(19ep) s2 0.5900(17ep)
+    M   mean 0.5837 std 0.0064  s0 0.5777(11ep) s1 0.5828(20ep) s2 0.5905(23ep)
+    X   mean 0.5913 std 0.0024  s0 0.5937(22ep) s1 0.5913(22ep) s2 0.5890(20ep)
+    HM  mean 0.5854 std 0.0128  s0 0.5708(12ep) s1 0.5907(13ep) s2 0.5948(11ep)
+  tgbl-uci: default config 0.283
+    B   mean 0.2620 std 0.0724  s0 0.1784(30ep) s1 0.3012(17ep) s2 0.3064(26ep)
+    M   mean 0.3868 std 0.0045  s0 0.3904(24ep) s1 0.3883(22ep) s2 0.3817(23ep)
+    X   mean 0.4069 std 0.0463  s0 0.4378(30ep) s1 0.4292(30ep) s2 0.3536(18ep)
+    HM  mean 0.3192 std 0.0344  s0 0.2904(30ep) s1 0.3099(30ep) s2 0.3572(30ep)
+  tgbl-wiki: default config 0.8251
+    B   mean 0.8239 std 0.0034  s0 0.8255(24ep) s1 0.8200(10ep) s2 0.8261(18ep)
+    M   mean 0.8260 std 0.0029  s0 0.8266(24ep) s1 0.8228(10ep) s2 0.8286(25ep)
+    X   mean 0.8226 std 0.0039  s0 0.8270(24ep,T) s1 0.8212(10ep) s2 0.8197(7ep)
+    HM  mean 0.7673 std 0.0076  s0 0.7586(10ep) s1 0.7729(9ep) s2 0.7703(17ep,T)
+  tgbl-review: default config 0.4157
+    B   mean 0.4033 std 0.0033  s0 0.4014(6ep,T) s1 0.4071(9ep) s2 0.4015(7ep)
+    M   mean 0.4025 std 0.0027  s0 0.3996(5ep,T) s1 0.4050(6ep,T) s2 0.4028(5ep,T)
+    X   mean 0.4018 std 0.0022  s0 0.4027(2ep,T) s1 0.3993(3ep,T) s2 0.4034(2ep,T)
+    HM  mean 0.4939 std 0.0019  s0 0.4936(5ep,T) s1 0.4959(6ep,T) s2 0.4921(5ep,T)
+TGB verdicts: supported = mean gain >= +0.005 MRR and at least 2 of 3 seeds won
+  M  vs B tgbl-enron   mean -0.0072 wins 1/3  -0.0128 -0.0093 +0.0005  -> not supported
+  M  vs B tgbl-uci     mean +0.1248 wins 3/3  +0.2120 +0.0871 +0.0753  -> SUPPORTED
+  M  vs B tgbl-wiki    mean +0.0021 wins 3/3  +0.0011 +0.0028 +0.0025  -> not supported
+  M  vs B tgbl-review  mean -0.0009 wins 1/3  -0.0018 -0.0021 +0.0013  -> not supported
+  X  vs M tgbl-enron   mean +0.0077 wins 2/3  +0.0160 +0.0085 -0.0015  -> SUPPORTED
+  X  vs M tgbl-uci     mean +0.0201 wins 2/3  +0.0474 +0.0409 -0.0281  -> SUPPORTED
+  X  vs M tgbl-wiki    mean -0.0034 wins 1/3  +0.0004 -0.0016 -0.0089  -> not supported
+  X  vs M tgbl-review  mean -0.0007 wins 2/3  +0.0031 -0.0057 +0.0006  -> not supported
+  HM vs M tgbl-enron   mean +0.0018 wins 2/3  -0.0069 +0.0079 +0.0043  -> not supported
+  HM vs M tgbl-uci     mean -0.0676 wins 0/3  -0.1000 -0.0784 -0.0245  -> not supported
+  HM vs M tgbl-wiki    mean -0.0587 wins 0/3  -0.0680 -0.0499 -0.0583  -> not supported
+  HM vs M tgbl-review  mean +0.0914 wins 3/3  +0.0940 +0.0909 +0.0893  -> SUPPORTED
+
+SYNTHETIC: historical test AP, seeds 0 and 1
+  S4  80.84 80.90
+  S5  84.17 84.25
+  S6  79.88 80.08
+  S0  79.94 79.98
+  M   86.86 86.46
+  X   86.49 86.37
+  M vs best single rate +2.69 +2.21 -> PASSED   X vs M -0.37 -0.09 -> failed
+
+COMPLETION CHECK
+  Main experiment     126 of 126  (4 truncated)
+  Large datasets       52 of  52  (13 truncated)
+  Ablations (A1)       24 of  24
+  Learned decay (LD)   18 of  18
+  Synthetic            12 of  12
+  Total               232 of 232
+  Missing main runs: none

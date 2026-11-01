@@ -1,0 +1,10 @@
+
+===== uci: 59,835 edges, 1899 nodes, 58,911 distinct times, span 193.7 days, test edges 8,976
+real test pairs: seen before (either direction) 82.1%, never seen 17.9%, seen in same direction 71.3%
+hard fake pairs: same direction active in the batch interval 0.0%, reversed direction active 0.2%
+hard test AP, rules: seen before 43.22, last-seen direction-blind 78.56, last-seen direction-aware 75.07
+
+===== enron: 125,235 edges, 184 nodes, 22,632 distinct times, span 1316.4 days, test edges 18,785
+real test pairs: seen before (either direction) 90.8%, never seen 9.2%, seen in same direction 89.1%
+hard fake pairs: same direction active in the batch interval 0.0%, reversed direction active 1.0%
+hard test AP, rules: seen before 48.21, last-seen direction-blind 85.91, last-seen direction-aware 86.32

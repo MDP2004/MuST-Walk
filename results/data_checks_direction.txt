@@ -1,0 +1,18 @@
+
+===== USLegis
+pair-steps with both directions stored: 0.0%; next-step repeats keeping stored direction: 55.1%
+real pairs: same direction active one step ago 45.8%
+hard fake pairs: same direction active now 0.0%, reversed direction active now 12.7%, same direction active one step ago 11.7%
+hard test AP, simple rules: direction-blind recency 71.76, direction-aware recency 69.96, direction-aware one step ago 63.73
+
+===== CanParl
+pair-steps with both directions stored: 3.6%; next-step repeats keeping stored direction: 83.5%
+real pairs: same direction active one step ago 40.9%
+hard fake pairs: same direction active now 0.0%, reversed direction active now 1.5%, same direction active one step ago 10.8%
+hard test AP, simple rules: direction-blind recency 66.56, direction-aware recency 67.18, direction-aware one step ago 65.18
+
+===== UNtrade
+pair-steps with both directions stored: 59.6%; next-step repeats keeping stored direction: 54.0%
+real pairs: same direction active one step ago 88.3%
+hard fake pairs: same direction active now 0.0%, reversed direction active now 23.2%, same direction active one step ago 15.4%
+hard test AP, simple rules: direction-blind recency 88.99, direction-aware recency 94.58, direction-aware one step ago 81.10

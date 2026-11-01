@@ -1,0 +1,16 @@
+device cuda:0 (NVIDIA RTX 6000 Ada Generation)
+    nodes  J  d_R | update ms/batch  us/edge | pairwise ms |  state MB  peak MB
+    10000  1  120 |           0.322     1.61 |       0.340 |      18.4       52
+    10000  2  120 |           0.631     3.15 |       0.632 |      32.3       87
+    10000  3  120 |           0.959     4.79 |       0.948 |      46.2      115
+    10000  4  120 |           1.252     6.26 |       1.257 |      60.0      143
+   100000  1  140 |           0.597     2.98 |       0.315 |     213.8      362
+   100000  2  140 |           1.187     5.93 |       0.636 |     374.1      680
+   100000  3  140 |           1.792     8.96 |       0.936 |     534.4     1005
+   100000  4  140 |           2.378    11.89 |       1.250 |     694.8     1329
+  1000000  1  160 |           5.041    25.20 |       0.312 |    2441.5     3786
+  1000000  2  160 |          10.067    50.33 |       0.642 |    4272.7     7357
+  1000000  3  160 |          15.079    75.39 |       0.950 |    6103.9    11019
+  1000000  4  160 |          20.173   100.86 |       1.251 |    7935.1    14681
+streaming vs recompute (n=100000, 1,000,000 past edges, J=1): rebuild from scratch 2.98 s, one streaming update 0.65 ms -> recompute is 4,554x the cost of one update
+streaming vs recompute (n=100000, 1,000,000 past edges, J=4): rebuild from scratch 11.93 s, one streaming update 2.47 ms -> recompute is 4,837x the cost of one update

@@ -1,0 +1,18 @@
+LD_CanParl_LM_s0 | CanParl | 0 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_learn_decay per_depth
+LD_CanParl_LM_s1 | CanParl | 1 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_learn_decay per_depth
+LD_CanParl_LM_s2 | CanParl | 2 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_learn_decay per_depth
+LD_CanParl_LP_s0 | CanParl | 0 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay per_depth
+LD_CanParl_LP_s1 | CanParl | 1 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay per_depth
+LD_CanParl_LP_s2 | CanParl | 2 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay per_depth
+LD_CanParl_LS_s0 | CanParl | 0 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay shared
+LD_CanParl_LS_s1 | CanParl | 1 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay shared
+LD_CanParl_LS_s2 | CanParl | 2 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay shared
+LD_USLegis_LM_s0 | USLegis | 0 | --rp_strict_time --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --rp_learn_decay per_depth
+LD_USLegis_LM_s1 | USLegis | 1 | --rp_strict_time --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --rp_learn_decay per_depth
+LD_USLegis_LM_s2 | USLegis | 2 | --rp_strict_time --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --rp_learn_decay per_depth
+LD_USLegis_LP_s0 | USLegis | 0 | --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay per_depth
+LD_USLegis_LP_s1 | USLegis | 1 | --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay per_depth
+LD_USLegis_LP_s2 | USLegis | 2 | --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay per_depth
+LD_USLegis_LS_s0 | USLegis | 0 | --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay shared
+LD_USLegis_LS_s1 | USLegis | 1 | --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay shared
+LD_USLegis_LS_s2 | USLegis | 2 | --rp_strict_time --rp_lambdas 2.2e-08 --rp_learn_decay shared

@@ -1,0 +1,9 @@
+
+===== UNvote
+pair-steps with both directions stored: 29.5%; next-step repeats keeping stored direction: 67.5%
+real pairs: same direction active one step ago 92.8%
+hard fake pairs: same direction active now 0.0%, reversed direction active now 81.0%, same direction active one step ago 13.6%
+hard test AP, simple rules: direction-blind recency 55.05, direction-aware recency 96.27, direction-aware one step ago 84.79
+
+finished
+done

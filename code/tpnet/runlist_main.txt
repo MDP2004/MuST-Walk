@@ -1,0 +1,126 @@
+V3_CanParl_B_s0 | CanParl | 0 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05
+V3_CanParl_B_s1 | CanParl | 1 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05
+V3_CanParl_B_s2 | CanParl | 2 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05
+V3_CanParl_E_s0 | CanParl | 0 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 27
+V3_CanParl_E_s1 | CanParl | 1 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 27
+V3_CanParl_E_s2 | CanParl | 2 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 27
+V3_CanParl_HB_s0 | CanParl | 0 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 --train_neg_hist 0.5 --select_hist
+V3_CanParl_HB_s1 | CanParl | 1 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 --train_neg_hist 0.5 --select_hist
+V3_CanParl_HB_s2 | CanParl | 2 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 --train_neg_hist 0.5 --select_hist
+V3_CanParl_HM_s0 | CanParl | 0 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_CanParl_HM_s1 | CanParl | 1 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_CanParl_HM_s2 | CanParl | 2 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_CanParl_HX_s0 | CanParl | 0 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_CanParl_HX_s1 | CanParl | 1 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_CanParl_HX_s2 | CanParl | 2 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_CanParl_M_s0 | CanParl | 0 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat
+V3_CanParl_M_s1 | CanParl | 1 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat
+V3_CanParl_M_s2 | CanParl | 2 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat
+V3_CanParl_X_s0 | CanParl | 0 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_CanParl_X_s1 | CanParl | 1 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_CanParl_X_s2 | CanParl | 2 | --sample_neighbor_strategy uniform --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_UNtrade_B_s0 | UNtrade | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07
+V3_UNtrade_B_s1 | UNtrade | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07
+V3_UNtrade_B_s2 | UNtrade | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07
+V3_UNtrade_E_s0 | UNtrade | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 32
+V3_UNtrade_E_s1 | UNtrade | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 32
+V3_UNtrade_E_s2 | UNtrade | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 32
+V3_UNtrade_HB_s0 | UNtrade | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07 --train_neg_hist 0.5 --select_hist
+V3_UNtrade_HB_s1 | UNtrade | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07 --train_neg_hist 0.5 --select_hist
+V3_UNtrade_HB_s2 | UNtrade | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07 --train_neg_hist 0.5 --select_hist
+V3_UNtrade_HM_s0 | UNtrade | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_UNtrade_HM_s1 | UNtrade | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_UNtrade_HM_s2 | UNtrade | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_UNtrade_HX_s0 | UNtrade | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_UNtrade_HX_s1 | UNtrade | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_UNtrade_HX_s2 | UNtrade | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_UNtrade_M_s0 | UNtrade | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat
+V3_UNtrade_M_s1 | UNtrade | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat
+V3_UNtrade_M_s2 | UNtrade | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat
+V3_UNtrade_X_s0 | UNtrade | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_UNtrade_X_s1 | UNtrade | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_UNtrade_X_s2 | UNtrade | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_UNvote_B_s0 | UNvote | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05
+V3_UNvote_B_s1 | UNvote | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05
+V3_UNvote_B_s2 | UNvote | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05
+V3_UNvote_E_s0 | UNvote | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 35
+V3_UNvote_E_s1 | UNvote | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 35
+V3_UNvote_E_s2 | UNvote | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 35
+V3_UNvote_HB_s0 | UNvote | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 --train_neg_hist 0.5 --select_hist
+V3_UNvote_HB_s1 | UNvote | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 --train_neg_hist 0.5 --select_hist
+V3_UNvote_HB_s2 | UNvote | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 --train_neg_hist 0.5 --select_hist
+V3_UNvote_HM_s0 | UNvote | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_UNvote_HM_s1 | UNvote | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_UNvote_HM_s2 | UNvote | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_UNvote_HX_s0 | UNvote | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_UNvote_HX_s1 | UNvote | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_UNvote_HX_s2 | UNvote | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_UNvote_M_s0 | UNvote | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat
+V3_UNvote_M_s1 | UNvote | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat
+V3_UNvote_M_s2 | UNvote | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat
+V3_UNvote_X_s0 | UNvote | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_UNvote_X_s1 | UNvote | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_UNvote_X_s2 | UNvote | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_USLegis_B_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06
+V3_USLegis_B_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06
+V3_USLegis_B_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06
+V3_USLegis_E_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 22
+V3_USLegis_E_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 22
+V3_USLegis_E_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --enforce_dim 22
+V3_USLegis_HB_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 --train_neg_hist 0.5 --select_hist
+V3_USLegis_HB_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 --train_neg_hist 0.5 --select_hist
+V3_USLegis_HB_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 --train_neg_hist 0.5 --select_hist
+V3_USLegis_HM_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_USLegis_HM_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_USLegis_HM_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_USLegis_HX_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_USLegis_HX_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_USLegis_HX_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_USLegis_M_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat
+V3_USLegis_M_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat
+V3_USLegis_M_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat
+V3_USLegis_X_s0 | USLegis | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_USLegis_X_s1 | USLegis | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_USLegis_X_s2 | USLegis | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 2.2e-08 0 --rp_fusion concat --rp_cross
+V3_enron_B_s0 | enron | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06
+V3_enron_B_s1 | enron | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06
+V3_enron_B_s2 | enron | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06
+V3_enron_E_s0 | enron | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --enforce_dim 30
+V3_enron_E_s1 | enron | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --enforce_dim 30
+V3_enron_E_s2 | enron | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --enforce_dim 30
+V3_enron_HB_s0 | enron | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 --train_neg_hist 0.5 --select_hist
+V3_enron_HB_s1 | enron | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 --train_neg_hist 0.5 --select_hist
+V3_enron_HB_s2 | enron | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 --train_neg_hist 0.5 --select_hist
+V3_enron_HM_s0 | enron | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_enron_HM_s1 | enron | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_enron_HM_s2 | enron | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_enron_HX_s0 | enron | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_enron_HX_s1 | enron | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_enron_HX_s2 | enron | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_enron_M_s0 | enron | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat
+V3_enron_M_s1 | enron | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat
+V3_enron_M_s2 | enron | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat
+V3_enron_X_s0 | enron | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross
+V3_enron_X_s1 | enron | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross
+V3_enron_X_s2 | enron | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-05 1e-06 1e-07 0 --rp_fusion concat --rp_cross
+V3_uci_B_s0 | uci | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07
+V3_uci_B_s1 | uci | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07
+V3_uci_B_s2 | uci | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07
+V3_uci_E_s0 | uci | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --enforce_dim 27
+V3_uci_E_s1 | uci | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --enforce_dim 27
+V3_uci_E_s2 | uci | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --enforce_dim 27
+V3_uci_HB_s0 | uci | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07 --train_neg_hist 0.5 --select_hist
+V3_uci_HB_s1 | uci | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07 --train_neg_hist 0.5 --select_hist
+V3_uci_HB_s2 | uci | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-07 --train_neg_hist 0.5 --select_hist
+V3_uci_HM_s0 | uci | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_uci_HM_s1 | uci | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_uci_HM_s2 | uci | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --train_neg_hist 0.5 --select_hist
+V3_uci_HX_s0 | uci | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_uci_HX_s1 | uci | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_uci_HX_s2 | uci | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross --train_neg_hist 0.5 --select_hist
+V3_uci_M_s0 | uci | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat
+V3_uci_M_s1 | uci | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat
+V3_uci_M_s2 | uci | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat
+V3_uci_X_s0 | uci | 0 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross
+V3_uci_X_s1 | uci | 1 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross
+V3_uci_X_s2 | uci | 2 | --rp_strict_time --rp_lazy --rp_lambdas 1e-06 1e-07 1e-08 0 --rp_fusion concat --rp_cross

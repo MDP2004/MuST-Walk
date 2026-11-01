@@ -1,0 +1,30 @@
+device cuda:0 (Tesla T4)
+    nodes  mode  J  d_R | update ms/batch  us/edge | pairwise ms |  state MB  peak MB
+    10000 eager  1  120 |           0.777     3.89 |       0.993 |      18.4       53
+    10000 eager  2  120 |           1.610     8.05 |       2.112 |      32.3       88
+    10000 eager  3  120 |           2.373    11.87 |       3.047 |      46.2      116
+    10000 eager  4  120 |           3.222    16.11 |       4.046 |      60.0      144
+    10000  lazy  1  120 |           0.694     3.47 |       1.200 |      18.4      113
+    10000  lazy  2  120 |           1.372     6.86 |       2.487 |      32.3       86
+    10000  lazy  3  120 |           2.159    10.80 |       3.505 |      46.2      113
+    10000  lazy  4  120 |           2.758    13.79 |       4.792 |      60.0      141
+   100000 eager  1  140 |           1.880     9.40 |       1.043 |     213.8      363
+   100000 eager  2  140 |           3.766    18.83 |       2.460 |     374.1      681
+   100000 eager  3  140 |           5.597    27.98 |       2.982 |     534.4     1006
+   100000 eager  4  140 |           7.467    37.34 |       4.299 |     694.8     1330
+   100000  lazy  1  140 |           0.704     3.52 |       1.186 |     213.8      954
+   100000  lazy  2  140 |           1.365     6.83 |       2.364 |     374.1      630
+   100000  lazy  3  140 |           2.115    10.58 |       3.537 |     534.4      954
+   100000  lazy  4  140 |           2.861    14.30 |       4.879 |     694.8     1278
+  1000000 eager  1  160 |          17.168    85.84 |       0.991 |    2441.5     3787
+  1000000 eager  2  160 |          34.283   171.41 |       2.258 |    4272.7     7358
+  1000000 eager  3  160 |          51.435   257.17 |       3.144 |    6103.9    11020
+  1000000 eager  4  160 |          68.507   342.53 |       4.097 |    7935.1    14682
+  1000000  lazy  1  160 |           0.679     3.39 |       1.183 |    2441.5    10412
+  1000000  lazy  2  160 |           1.394     6.97 |       2.524 |    4272.7     6750
+  1000000  lazy  3  160 |           2.055    10.27 |       3.542 |    6103.9    10412
+  1000000  lazy  4  160 |           2.809    14.05 |       4.722 |    7935.1    14075
+streaming vs recompute (n=100000, 1,000,000 past edges, J=1, eager): rebuild from scratch 9.34 s, one streaming update 1.95 ms -> recompute is 4,789x the cost of one update
+streaming vs recompute (n=100000, 1,000,000 past edges, J=1, lazy): rebuild from scratch 3.42 s, one streaming update 0.75 ms -> recompute is 4,589x the cost of one update
+streaming vs recompute (n=100000, 1,000,000 past edges, J=4, eager): rebuild from scratch 37.24 s, one streaming update 7.56 ms -> recompute is 4,927x the cost of one update
+streaming vs recompute (n=100000, 1,000,000 past edges, J=4, lazy): rebuild from scratch 13.81 s, one streaming update 3.01 ms -> recompute is 4,583x the cost of one update

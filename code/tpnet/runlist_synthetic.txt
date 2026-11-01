@@ -1,0 +1,12 @@
+SY_uci_M_s0 | uci | 0 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 1e-04 1e-05 1e-06 0 --rp_fusion concat
+SY_uci_M_s1 | uci | 1 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 1e-04 1e-05 1e-06 0 --rp_fusion concat
+SY_uci_S0_s0 | uci | 0 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 0
+SY_uci_S0_s1 | uci | 1 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 0
+SY_uci_S4_s0 | uci | 0 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 1e-04
+SY_uci_S4_s1 | uci | 1 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 1e-04
+SY_uci_S5_s0 | uci | 0 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 1e-05
+SY_uci_S5_s1 | uci | 1 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 1e-05
+SY_uci_S6_s0 | uci | 0 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 1e-06
+SY_uci_S6_s1 | uci | 1 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 1e-06
+SY_uci_X_s0 | uci | 0 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 1e-04 1e-05 1e-06 0 --rp_fusion concat --rp_cross
+SY_uci_X_s1 | uci | 1 | --not_encode --rp_strict_time --rp_lazy --rp_lambdas 1e-04 1e-05 1e-06 0 --rp_fusion concat --rp_cross

@@ -1,0 +1,14 @@
+
+===== uci: 59,835 edges, 1899 nodes, 58911 distinct times
+[same-time] test batches 45: batches holding same-time edges 2.2%, mean same-time edges in sketch 1, share of tuned-lambda (1e-07) walk-1 weight from same-time edges 0.0%
+[negatives] random test negatives that are true edges at that same time: 0.1%, self-loops: 0.1%
+[held-out] pre-validation edges 41,884, in the sketch 34,352, missing 18.0%
+[overflow] lambda=1e-07 d=110: max per layer ['0.444', '62.1', '5.02e+03', '4.58e+05'], non-finite inner products 0/128000, log-feature max 28.6
+[overflow] lambda=0 d=110: max per layer ['0.444', '92.7', '1.2e+04', '2.15e+06'], non-finite inner products 0/128000, log-feature max 31.6
+
+===== enron: 125,235 edges, 184 nodes, 22632 distinct times
+[same-time] test batches 94: batches holding same-time edges 79.8%, mean same-time edges in sketch 97, share of tuned-lambda (1e-06) walk-1 weight from same-time edges 3.3%
+[negatives] random test negatives that are true edges at that same time: 5.3%, self-loops: 0.5%
+[held-out] pre-validation edges 87,665, in the sketch 69,452, missing 20.8%
+[overflow] lambda=1e-06 d=120: max per layer ['0.396', '9.98', '64.3', '2.75'], non-finite inner products 0/128000, log-feature max 10.7
+[overflow] lambda=0 d=120: max per layer ['0.396', '4.98e+03', '4.98e+07', '3.31e+11'], non-finite inner products 0/128000, log-feature max 55.9
