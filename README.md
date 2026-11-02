@@ -4,8 +4,10 @@ Course project for DAL 518 (Graph Machine Learning), Project 4.3, "Efficient tem
 
 Abhi Raj, Manas Dnyaneshvar Patil, Kamranjeet Singh.
 
-- Report: [docs/MuST-Walk_Report.pdf](docs/MuST-Walk_Report.pdf)
-- Slides: [docs/MuST-Walk_Presentation.pptx](docs/MuST-Walk_Presentation.pptx)
+- Research paper, TPNet against MuST-Walk and MuST-HN: [docs/MuST-Walk_Research_Paper.pdf](docs/MuST-Walk_Research_Paper.pdf)
+- Slides for that paper: [docs/MuST-Walk_Research_Presentation.pptx](docs/MuST-Walk_Research_Presentation.pptx)
+- Full study report, every model tried: [docs/MuST-Walk_Report.pdf](docs/MuST-Walk_Report.pdf)
+- Full study slides: [docs/MuST-Walk_Presentation.pptx](docs/MuST-Walk_Presentation.pptx)
 - Every run and its result: [results/runs_main_and_large.csv](results/runs_main_and_large.csv)
 
 ## Summary
@@ -21,11 +23,12 @@ TPNet encodes temporal walks with a random-projection sketch and one decay rate 
 
 Main findings:
 
-- Multi-scale beats tuned TPNet on 3 of 6 DyGLib datasets, where the tuned decay erases the previous time step. It is not a general improvement.
+- Multi-scale beats tuned TPNet on 3 of 6 DyGLib datasets. It is not a general improvement, and most of that gain comes from how the historical test is built.
 - Training on historical negatives gives +9.44 to +25.62 AP on all 6 datasets, 18 of 18 seeds, at a cost on random-negative tests and with mixed TGB results. This idea is not new; see Credits.
-- The lazy update reaches a true O(k·dR) per edge and is 24 times faster at 1M nodes with J = 4.
+- The lazy update costs amortised O(J·k·dR) per edge plus a rare renormalisation, and is 24 times faster at 1M nodes with J = 4.
 - The same-timestamp leak moves baseline scores substantially. Zhang et al. reported it first.
 - On UN Trade and UN Vote a simple direction-aware recency rule beats every model we trained.
+- A pair never seen in its stored direction cannot be a historical negative, so those positives are free. They are 34.3%, 51.3%, 2.0%, 0.3%, 42.1% and 11.2% of test positives on the six datasets. A no-learning rule that uses this beats MuST-Walk and MuST-HN on Can. Parl., UN Vote, UCI and Enron.
 
 ## Layout
 
@@ -36,8 +39,8 @@ Main findings:
 | `verify/` | Tiny-graph traces, brute-force sketch check, data statistics, audit findings |
 | `preregistration/` | Decision rules written before each experiment, with dated addenda |
 | `results/` | Result tables, per-run CSV files, benchmarks, data checks |
-| `analysis/` | Script that built the final tables |
-| `docs/` | Report and slides |
+| `analysis/` | Script that built the final tables. `paper_checks/` holds the graph-structure, read-time and number checks behind the research paper |
+| `docs/` | Research paper and its slides, full study report and its slides |
 
 ## Model names
 
@@ -110,6 +113,7 @@ TGB_TPNet has no licence, so its code is not copied here. Clone `github.com/lxd9
 - Account names, machine details and one ablation label in logs and pre-registrations were replaced with neutral text, and files were renamed for clarity. No result changed.
 - `analysis/final_analysis.py` needs the raw run logs, about 2.6 GB, which are not in this repository. Its output is `results/final_tables.txt` and `results/runs_main_and_large.csv`.
 - Earlier experiments on the original code are in `results/original_code_*`. They carry the same-timestamp leak.
+- The full study report and its slides say the tuned decay erases the previous time step. That is wrong. A sketch is read before the current step's decay is applied, so an edge one step old reads at weight 1. The research paper has the corrected analysis, and `analysis/paper_checks/read_weight.py` shows it. Set `TPNET_DATA` to the preprocessed data folder to run that script and `structure_analysis.py`.
 
 ## Credits
 

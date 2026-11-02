@@ -1,0 +1,14 @@
+== 1. toy stream, query in year 2
+lazy=True  lambda=1e-05: one-step-old edge read at weight 1.000000 (report's formula e^-lambda*dt = 1.575e-137); two-step-old layer norm 0.000e+00; sketch clock 1.0 y, query 2.0 y
+lazy=True  lambda=1e-06: one-step-old edge read at weight 1.000000 (report's formula e^-lambda*dt = 2.088e-14); two-step-old layer norm 1.951e-14; sketch clock 1.0 y, query 2.0 y
+lazy=True  lambda=1e-07: one-step-old edge read at weight 1.000000 (report's formula e^-lambda*dt = 4.285e-02); two-step-old layer norm 4.004e-02; sketch clock 1.0 y, query 2.0 y
+lazy=False lambda=1e-05: one-step-old edge read at weight 1.000000 (report's formula e^-lambda*dt = 1.575e-137); two-step-old layer norm 0.000e+00; sketch clock 1.0 y, query 2.0 y
+lazy=False lambda=1e-06: one-step-old edge read at weight 1.000000 (report's formula e^-lambda*dt = 2.088e-14); two-step-old layer norm 1.951e-14; sketch clock 1.0 y, query 2.0 y
+lazy=False lambda=1e-07: one-step-old edge read at weight 1.000000 (report's formula e^-lambda*dt = 4.285e-02); two-step-old layer norm 4.004e-02; sketch clock 1.0 y, query 2.0 y
+
+== 2. real data: can the sketch at the tuned rate see 'active one step ago'? (test split, positives + all pairs seen)
+USLegis  step 1.00 y, lambda 1e-06, formula weight 2.01e-14: mean feature, pairs active one step ago 0.859 (n=3000), seen earlier only 0.121 (n=3000), AUC 0.772
+CanParl  step 1.00 y, lambda 1e-05, formula weight 1.10e-137: mean feature, pairs active one step ago 1.176 (n=3000), seen earlier only 0.024 (n=3000), AUC 0.966
+UNtrade  step 1.00 y, lambda 1e-07, formula weight 4.27e-02: mean feature, pairs active one step ago 1.854 (n=3000), seen earlier only 0.244 (n=3000), AUC 0.745
+UNvote   step 1.00 y, lambda 1e-05, formula weight 1.10e-137: mean feature, pairs active one step ago 1.326 (n=3000), seen earlier only 0.767 (n=3000), AUC 0.610
+exit 0
